@@ -2,11 +2,17 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
+	function __construct(){
+            parent::__construct();		
+            $this->load->model('fastprint/M_beranda');
+            $this->load->helper('url');
+    }
 	public function index()
 	{
-		$this->load->view('headerAdmin');
-                $this->load->view('fastprint/v_beranda');
-                $this->load->view('footer');
+		$data['query'] = $this->M_beranda->tampil_data();
+		$this->load->view('headerAdmin', $data);
+                $this->load->view('fastprint/v_beranda', $data);
+                $this->load->view('footer', $data);
 	}
 }
 ?>
