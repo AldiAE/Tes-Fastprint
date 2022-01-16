@@ -123,7 +123,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="custom-width-modalLabel">DATA USER</h4>
+                        <h4 class="modal-title" id="custom-width-modalLabel">DATA PRODUK</h4>
                         <form action="<?php echo base_url('fastprint/ProdukController/delete'); ?>" method="post" class="form-horizontal" role="form">
                     </div>
                     <div class="modal-body">
