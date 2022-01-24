@@ -38,5 +38,3 @@ class ProdukController extends CI_Controller {
                 $this->M_produk->hapus_data($id_produk);
         }
 }
-
-?>
